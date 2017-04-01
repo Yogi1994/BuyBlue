@@ -4,7 +4,10 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.version',
-  'home'
+  'home',
+  'productTile',
+  'footer',
+  'navBar'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

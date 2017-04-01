@@ -15,5 +15,5 @@ home
   });
 }])
 .controller('homeCtrl', [function() {
-
+  
 }]);
