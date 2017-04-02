@@ -6,7 +6,7 @@ angular.module('myApp', [
   'myApp.version',
   'home',
   'productTile',
-  'footer',
+  'blueFooter',
   'navBar',
   'carouselMain',
   'brandTile',

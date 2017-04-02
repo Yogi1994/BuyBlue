@@ -13,6 +13,9 @@ brandTile.
         this.image = [
         	'img/brand/adidas.png',
         	'img/brand/nike.png',
+        	'img/brand/nike.png',
+        	'img/brand/nike.png',
+        	'img/brand/nike.png',
         	'img/brand/puma.png'
         ]
       }

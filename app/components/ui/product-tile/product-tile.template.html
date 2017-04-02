@@ -1,7 +1,38 @@
-<div>
-    <h4>{{$ctrl.name}}</h4>
-    <img ng-src="{{$ctrl.image}}" alt="{{$ctrl.name}}" width="200" height="200">
-    <product-tag title="$ctrl.tag"></product-tag>
-    <h4>{{$ctrl.price}}</h4>
+<style>
+    .product-container {
+        border: 0.5px solid #cecece;
+        /*margin-top: 10px;*/
+    }
+    .product-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .product-footer {
+
+    }
+    .product-image {
+        text-align: center;
+
+    }
+    .product-price {
+        text-align: center;
+    }
+</style>
+
+<div class="product-container">
+    <h4 class="product-title">{{$ctrl.name}}</h4>
+    <div class="product-image">
+        <img ng-src="{{$ctrl.image}}" alt="{{$ctrl.name}}" width="300" height="300">
+    </div>
+
+    <div class="product-footer">
+        <div class="col-xs-3">
+            <product-tag title="$ctrl.tag"></product-tag>
+        </div>
+        <div class="col-xs-6">
+            <h5 class="product-price">${{$ctrl.price}}</h5>
+        </div>
+    </div>
+
 </div>
 
