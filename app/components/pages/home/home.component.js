@@ -44,6 +44,18 @@ home.component('home', {
             image: 'img/dell-streak-7.0.jpg',
             tag: "NEW",
             price: 2000
+        },
+        {
+            name: "H&M 5Chino Shorts",
+            image: 'img/dell-streak-7.0.jpg',
+            tag: "NEW",
+            price: 2000
+        },
+        {
+            name: "H&M 6Chino Shorts",
+            image: 'img/dell-streak-7.0.jpg',
+            tag: "NEW",
+            price: 2000
         }
     ];
   }

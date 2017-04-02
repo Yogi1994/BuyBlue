@@ -11,10 +11,11 @@ carouselMain.
     controller: 
       function CarouselMainController() {
         this.image = [
-        	'img/dell-streak-7.0.jpg',
-        	'img/dell-streak-7.1.jpg',
-        	'img/dell-streak-7.2.jpg',
-        	'img/dell-streak-7.3.jpg'
+        	'img/poster/poster1.jpg',
+        	'img/poster/poster2.jpg',
+        	'img/poster/poster3.jpg',
+        	'img/poster/poster4.jpg'
+
         ];
       }
   });
