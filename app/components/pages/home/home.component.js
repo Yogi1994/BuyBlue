@@ -5,15 +5,14 @@ var home  = angular.module('home', [
   'ngRoute',
 ]);
 
-
-// Register `home` component, along with its associated controller and template
-home
-.config(['$routeProvider', function($routeProvider) {
+home.component('home', {
+  templateUrl: 'components/pages/home/home.template.html',
+  controller: function() {
+    this.tile = [1,2,3,4,5,6,7,8,9,10];
+  }
+})
+.config(function($routeProvider) {
   $routeProvider.when('/home', {
-    templateUrl: 'components/pages/home/home.template.html',
-    controller: 'homeCtrl'
+    template: '<home></home>'
   });
-}])
-.controller('homeCtrl', [function() {
-  
-}]);
+});

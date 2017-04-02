@@ -3,7 +3,9 @@
     <div>
         <div>Home</div>
         <carousel-main></carousel-main>
-        <product-tile></product-tile>
+        <div ng-repeat="i in $ctrl.tile">
+        	<product-tile></product-tile>
+        </div>
     </div>
     <footer></footer>
 </div>
