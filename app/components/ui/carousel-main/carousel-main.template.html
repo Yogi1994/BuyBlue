@@ -1,38 +1,10 @@
 <style type="text/css">
-  .carousel-indicators .active {
-
-     /*background-color: #acacac;*/
-    /* height: 12px; */
-    /* left: 50%; */
-    /* width: 12px; */
-    /* width: 60%; */
-    /*bottom: 10px;*/
-    /*margin-left: -30%;*/
-    /*padding-left: 0;*/
-    /*text-align: center;*/
-    /*left:0;*/
-    /*list-style: none;*/
-    /*margin: 0;*/
-    /*position: absolute;*/
-    /*right: 50;*/
-    /*width:100;*/
-    /*z-index: 15;*/
-  }
   .carousel-indicators {
-    /*margin-left: -30%;*/
-     left: 0;
-    /* width: 60%; */
-    /*bottom: 10px;*/
-    /*padding-left: 0;*/
-    /*right: 0;*/
+    left: 0;
     list-style: none;
     margin: 0;
-    /*position: absolute;*/
-    /*right:50;*/
     text-align: left;
-    /*width: 100%;*/
     top:0;
-    /*width:100;*/
     z-index: 15;
   }
 
@@ -42,6 +14,13 @@
     min-height: 400px;
     max-height: 400px;
   }
+  .divIndi img{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+
+  }
 </style>
 
 <!--<div class="container-fluid">-->
@@ -49,8 +28,6 @@
 
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
       <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner " role="listbox">
           <div class="item active peopleCarouselImg">
@@ -87,16 +64,16 @@
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
         <ol class="carousel-indicators">
           <div class="divIndi">
-            <img data-target="#myCarousel" data-slide-to="0" ng-src="{{$ctrl.image[0]}}" alt="Chania"  height="100">
+            <img class="divIndi" data-target="#myCarousel" data-slide-to="0" ng-src="{{$ctrl.image[0]}}" alt="Chania" height="100">
           </div>
-          <div >
-            <img data-target="#myCarousel" data-slide-to="1"  ng-src="{{$ctrl.image[1]}}" alt="Chania"  height="100">
+          <div class="divIndi">
+            <img class="divIndi" data-target="#myCarousel" data-slide-to="1"  ng-src="{{$ctrl.image[1]}}" alt="Chania" height="100">
           </div>
-          <div >
-            <img data-target="#myCarousel" data-slide-to="2"  ng-src="{{$ctrl.image[2]}}" alt="Chania"   height="100">
+          <div class="divIndi">
+            <img class="divIndi" data-target="#myCarousel" data-slide-to="2"  ng-src="{{$ctrl.image[2]}}" alt="Chania" height="100">
           </div>
-          <div >
-            <img data-target="#myCarousel" data-slide-to="3"  ng-src="{{$ctrl.image[3]}}" alt="Chania"  height="100">
+          <div class="divIndi" >
+            <img class="divIndi" data-target="#myCarousel" data-slide-to="3"  ng-src="{{$ctrl.image[3]}}" alt="Chania" height="100">
           </div>
         </ol>
       </div>
