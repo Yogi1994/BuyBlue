@@ -10,6 +10,7 @@ angular.module('myApp', [
   'navBar',
   'carouselMain',
   'brandTile',
+  'productTag',
   'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

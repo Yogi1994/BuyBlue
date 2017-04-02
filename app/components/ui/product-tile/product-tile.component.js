@@ -8,9 +8,15 @@ var productTile  = angular.module('productTile', []);
 productTile.
   component('productTile', {
     templateUrl: 'components/ui/product-tile/product-tile.template.html',
-    controller: 
+    bindings: {
+        name: '=',
+        tag: '=',
+        price: '=',
+        image: '='
+    },
+    controller:
       function ProductTileController() {
-        
+
       }
   });
 
