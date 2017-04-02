@@ -10,7 +10,11 @@ brandTile.
     templateUrl: 'components/ui/brand-tile/brand-tile.template.html',
     controller: 
       function ProductTileController() {
-        
+        this.image = [
+        	'img/brand/adidas.png',
+        	'img/brand/nike.png',
+        	'img/brand/puma.png'
+        ]
       }
   });
 
