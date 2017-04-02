@@ -3,9 +3,12 @@
     <div>
         <div>Home</div>
         <carousel-main></carousel-main>
-        <div ng-repeat="i in $ctrl.tile">
-        	<product-tile></product-tile>
+        <div class="container">
+        	<div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="i in $ctrl.tile">
+	        	<product-tile></product-tile>
+	        </div>
         </div>
+        
     </div>
     <footer></footer>
 </div>

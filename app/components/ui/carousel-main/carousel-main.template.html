@@ -1,29 +1,73 @@
+<style type="text/css">
+  .carousel-indicators .active {
+    /* width: 12px; */
+    /* height: 12px; */
+    margin: 0;
+    /* background-color: #fff; */
+    position: absolute;
+    bottom: 10px;
+    /* left: 50%; */
+    right: 0;
+    z-index: 15;
+    width:100;
+    /* width: 60%; */
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators {
+    margin: 0;
+
+    position: absolute;
+    bottom: 10px;
+    /* left: 50%; */
+    right: 0;
+    z-index: 15;
+    width:100;
+    /* width: 60%; */
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+</style>
+
 <div class="container">
   <br>
+  {{$ctrl.image}}
   <div id="myCarousel" class="carousel slide" data-ride="carousel" >
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <div class="active">
+        <img data-target="#myCarousel" data-slide-to="0" ng-src="{{$ctrl.image[0]}}" alt="Chania" width="100" height="100">
+        </div>
+      <div>
+        <img data-target="#myCarousel" data-slide-to="1"  ng-src="{{$ctrl.image[1]}}" alt="Chania" width="100" height="100">
+        </div>
+      <div>
+        <img data-target="#myCarousel" data-slide-to="2"  ng-src="{{$ctrl.image[2]}}" alt="Chania" width="100" height="100">
+        </div>
+      <div>
+        <img data-target="#myCarousel" data-slide-to="3"  ng-src="{{$ctrl.image[3]}}" alt="Chania" width="100" height="100">
+      </div>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/dell-streak-7.0.jpg" alt="Chania" width="460" height="345">
+        <img ng-src="{{$ctrl.image[0]}}" alt="Chania" width="460" height="345">
       </div>
       <div class="item">
-        <img src="img//dell-streak-7.1.jpg" alt="Chania" width="460" height="345">
+        <img ng-src="{{$ctrl.image[1]}}" alt="Chania" width="460" height="345">
       </div>
       <div class="item">
-        <img src="img/dell-streak-7.2.jpg" alt="Chania" width="460" height="345">
+        <img ng-src="{{$ctrl.image[2]}}" alt="Chania" width="460" height="345">
       </div>
       <div class="item">
-        <img src="img/dell-streak-7.3.jpg" alt="Chania" width="460" height="345">
+        <img ng-src="{{$ctrl.image[3]}}" alt="Chania" width="460" height="345">
       </div>
-      <!-- <div class="item" ng-repeat="img in $ctrl.carimg">
+      <!-- <div class="item" ng-repeat="img in $ctrl.image">
         <img ng-src="{{img}}" alt="Chania" width="460" height="345">
       </div>
        -->

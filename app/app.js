@@ -8,7 +8,8 @@ angular.module('myApp', [
   'productTile',
   'footer',
   'navBar',
-  'carouselMain'
+  'carouselMain',
+  'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
