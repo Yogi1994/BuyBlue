@@ -1,6 +1,36 @@
 <style>
-    .tag{
+    .outer-container{
+        width: 80px;
 
     }
+    .tag{
+        background: #229922;
+        border-radius: 3px 0 0 3px;
+        color: #ffffff;
+        /*display: inline-block;*/
+        height: 26px;
+        line-height: 26px;
+        padding-left: 4px;
+        padding-right: 4px;
+        position: relative;
+        /*margin: 0 px 10px 0;*/
+        text-decoration: none;
+        float:left;
+    }
+    .triangle {
+        border-bottom: 13px solid transparent;
+        border-left: 13px solid #229922;
+        border-top: 13px solid transparent;
+        font-size: 0;
+        height: 0;
+        display: inline-block;
+        line-height: 0;
+        padding: 0;
+        margin-top: 10;
+        float:left;
+        /*margin-left: -10px;*/
+    }
 </style>
-<span  class="tag">{{$ctrl.title}}</span>
+<div class="outer-container">
+    <span  class="tag">{{$ctrl.title}}</span><a class="triangle"></a>
+</div>
